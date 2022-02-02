@@ -709,7 +709,7 @@ textarea:focus{
 
 }
 
-@media(width <= 600px)
+@media(max-width:600px)
 {
 :root{
 --h1: 2.4rem;
@@ -768,7 +768,7 @@ p{
 
 
 
-@media(width <= 768px)
+@media(max-width:768px)
 {
 
 #about-dis{
@@ -820,7 +820,7 @@ p{
 
 
 
-@media(width <= 992px)
+@media(max-width: 992px)
 {
 
 .toggle{
@@ -904,7 +904,7 @@ header{
 
 
 
-@media(width <= 1200px)
+@media(max-width: 1200px)
 {
 
 #coder{
