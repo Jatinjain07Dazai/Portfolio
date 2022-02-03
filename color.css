@@ -457,7 +457,7 @@ position: relative;
 width: 40vw;
 color: #E2E2E2;
 font-size: 1.6rem;
-padding-left: 20px;
+padding-left: 5%;
 padding-top: 50px;
 text-align: justify;
 }
@@ -536,6 +536,7 @@ p:after{
 #form-area{
 	position:relative;
 	max-width: 60%;
+	min-height: fit-content;
 	padding: 20px 40px;
 	background: #f2f2f2;
 	opacity: 0.8;
@@ -717,50 +718,63 @@ textarea:focus{
 --h3: 1.5rem;
 }
 
-.toggle{
-	width: 20px;
-	height: 20px;
-}
+
+
 .home{
-	min-height: 60vh;
-	min-width: 60vw;
-}
-#about-dis{
-	font-size: 3rem !important;
-	letter-spacing: .6rem;
-	margin-left: 20px;
+	padding-right: 0;
+	margin-right: 0;
 }
 
-#about-dis:after{
-	width: 90% !important;
+.about{
+	padding-right: 0;
+	margin-right: 0;
 }
 
 p{
-	padding-left:  10px !important;
+	margin-left: 10% !important;
+	padding-left: 0 !important;
 }
 
-#ci{
-	display: none;
+
+#about-dis{
+	letter-spacing: 0;
+
+}
+#about-dis:after{
+	width: 95% !important;
+}
+
+.contact{
+	
+}
+
+.contact{
+	margin: 0;
+	padding: 0;
+}
+
+#c-head{
+	font-size: 2rem;
 }
 
 #main-block{
-	padding: 20px;
+	padding: 5% 5%;
 }
 
 #form-area{
 	left: 0 !important;
 }
 
-#c-head{
-	margin-left:-20px !important;
+#ci{
+	display: none;
 }
 
 #contact{
-	margin-left: -14% !important;
+	margin-left: -16% !important;
 }
 
-}
 
+}
 
 
 
