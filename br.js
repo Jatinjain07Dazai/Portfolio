@@ -3,6 +3,7 @@ function validate(){
 	let email = document.getElementById('email').value;
 	let title = document.getElementById('ttl').value;
 	let err = document.getElementById('error');
+	let cr = document.getElementById('name');
 	if(name.length < 5){
 		err.innerHTML = "** The name is Too short";
 		err.style.color = "red";
