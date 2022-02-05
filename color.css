@@ -190,6 +190,8 @@ li:nth-child(4){
 	border-top:0px ;
 }
 
+
+
 .social-icon{
 	list-style: none;
 	flex-direction: row;
@@ -642,6 +644,7 @@ p:after{
   margin-bottom: 10px;
   cursor: pointer;
 }
+
 .visit:hover{
 	background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
