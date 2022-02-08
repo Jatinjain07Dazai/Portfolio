@@ -593,7 +593,7 @@ p:after{
  
 #my-work{
 	display: block;
-	min-height: 120vh;
+	min-height: 160vh;
 	height: auto;
 	min-width:80vw;
 	background: linear-gradient(30deg, #89DAFF, #AEC5EB);
@@ -613,24 +613,22 @@ p:after{
 }
 
 .main-grid{
-	overflow: scroll;
-	overflow-y: hidden;
+	overflow: hidden;
 	overflow-x: hidden;
-	position: absolute;
-	min-width: 80%;
-	height: 90%;
-	left: 14%;
-	right: 0%;
-	padding: 40px;
+	position: relative;
+	min-height: inherit;
+	width: 80vw;
+	left: 15vw;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	grid-row-gap: 10%;
+	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	grid-row-gap: 5%;
+
 }
 
 .card {
   perspective: 150rem;
   position: relative;
-  height: 10rem;
+  height: inherit;
   max-width: 250px;
   margin: 0 0 0 5%;
   box-shadow: none;
@@ -639,12 +637,12 @@ p:after{
 }
 
 .card-side {
-  height: 16rem;
+  height:fit-content;
   border-radius: 15px;
   transition: all 0.8s ease;
   backface-visibility: hidden;
   position:absolute;
-  width: 80%;
+  width: 14vw;
   padding:2rem;
   color: white;
 
@@ -671,7 +669,7 @@ p:after{
 
 .fcontent{
 	display: flex;
-	margin-top: 15px;
+	margin-top: 5%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -714,7 +712,7 @@ p:after{
 	font-size: 1.0rem;
 	width: 80%;
 	padding: 0;
-	padding-top: 20px;
+	padding-top: 5%;
 }
 .visit{
   background: #3498db;
@@ -1050,7 +1048,7 @@ p{
 .contact-bl{
 	width: 90% !important;
 }
-
+i
 #ci{
 	margin-left: -5% !important;
 }
@@ -1059,24 +1057,19 @@ p{
 	margin-left: -10%;
 }
 .main-grid{
-	left: 0;
-	grid-row-gap: 40%;
-	padding: 0;
-	margin: 0 20px;
-	padding: 20px;
-	scroll-behavior: smooth;
-	overflow-y: visible;
-	border: none;	
+	grid-template-columns: 1fr !important;
+	grid-row-gap: 400px;
+	padding-left: 12vw !important;
 }
 
-
-
+.card-side{
+	height: 30vh;
+	width: 50vw !important;
 
 }
 
-
-
-
+ 
+}
 
 
 
@@ -1144,6 +1137,18 @@ header{
 	left: 5%;
 }
 
+.main-grid{
+	left: 0;
+	width: 80vw;
+	overflow: hidden;
+	padding-left: 10vw;
+	grid-template-columns: 1fr  1fr;
+}
+
+.card-side{
+	width: 30vw;
+}
+
 }
 
 
@@ -1184,6 +1189,7 @@ header{
 
 @media(max-width: 1200px)
 {
+
 
 #coder{
 padding: 0;
