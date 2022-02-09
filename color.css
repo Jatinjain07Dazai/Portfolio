@@ -1063,7 +1063,7 @@ i
 }
 
 .card-side{
-	height: 30vh;
+	height: auto;
 	width: 50vw !important;
 
 }
