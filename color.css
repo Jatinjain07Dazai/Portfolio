@@ -63,6 +63,14 @@ body{
 	border-radius: 20%;
 }
 
+.toggle:hover{
+	transform: scale(1.2);
+	-webkit-transition: all .40s ease-in-out;
+}
+
+.line:hover{
+}
+
 
 
 
@@ -70,7 +78,6 @@ body{
 		/*navbar*/
 
 header{
-
 	position: fixed;
 	min-height: 100vh;
 	width: 10vw ;
@@ -127,7 +134,7 @@ ul{
 	letter-spacing: .125em;
 	padding: 10%;
 	color: var(--md-blue);
-	transition: 60ms color ease-in;
+	-webkit-transition: 60ms color ease-in;
 }
 
 .nav-link:hover{
@@ -193,7 +200,7 @@ li:nth-child(4){
 
 .snow-icon:hover{
 	transform: scale(1.2);
-	transition: all .40s ease-in-out;
+	-webkit-transition: all .40s ease-in-out;
 }
 #i:before{
 	position: absolute;
@@ -215,7 +222,7 @@ li:nth-child(4){
 #i:hover:before{
 	transform: scale(1.0);
 	transform-origin: top;
-	transition: all .40s ease-in-out;
+	-webkit-transition: all .40s ease-in-out;
 }
 
 #g:before{
@@ -238,7 +245,7 @@ li:nth-child(4){
 #g:hover:before{
 	transform: scale(1.0);
 	transform-origin: top;
-	transition: all .40s ease-in-out;
+	-webkit-transition: all .40s ease-in-out;
 }
 
 #gm:before{
@@ -261,12 +268,12 @@ li:nth-child(4){
 #gm:hover:before{
 	transform: scale(1.0);
 	transform-origin: top;
-	transition: all .40s ease-in-out;
+	-webkit-transition: all .40s ease-in-out;
 }
 
 .s-icon:hover{
 	transform: scale(1.4);
-	transition: all .40s ease-in-out;
+	-webkit-transition: all .40s ease-in-out;
 }
 
 .social-icon{
@@ -324,7 +331,7 @@ h1{
 	z-index: 30;
 	transform: scale(0);
 	transform-origin: right bottom;
-	transition: transform 0.25s linear;
+	-webkit-transition: transform 0.25s linear;
 
 }
 
@@ -359,7 +366,7 @@ h2{
 	z-index: 30;
 	transform: scale(0);
 	transform-origin: right bottom;
-	transition: transform 0.25s linear;
+	-webkit-transition: transform 0.25s linear;
 }
 
 #dk:hover:after{
@@ -386,7 +393,7 @@ h2{
 	z-index: 30;
 	transform: scale(0);
 	transform-origin: right bottom;
-	transition: transform 0.25s linear;
+	-webkit-transition: transform 0.25s linear;
 }
 
 #md:hover:after{
@@ -421,7 +428,7 @@ h3{
 	z-index: 30;
 	transform: scale(0);
 	transform-origin: bottom;
-	transition: transform 0.25s linear;
+	-webkit-transition: transform 0.25s linear;
 }
 
 #lgt:hover:after{
@@ -441,7 +448,7 @@ h3{
 	color: #fff;
 	border-color: #ffd;
 	font-weight: 600;
-	transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
 	
 }
 #t:after{
@@ -455,7 +462,7 @@ h3{
 	margin-left:10px;
 	margin-top: -5px;
 	transform: scale(0);
-	transition: all 0.40s ease-in-out;
+	-webkit-transition: all 0.40s ease-in-out;
 
 }
 
@@ -639,7 +646,7 @@ p:after{
 .card-side {
   height:fit-content;
   border-radius: 15px;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
   backface-visibility: hidden;
   position:absolute;
   width: 14vw;
@@ -837,7 +844,7 @@ input:focus{
 	margin-left: 6.4px ;
 	transform: scale(0) ;
 	transform-origin: bottom right;
-	transition: transform .25s ease-in;
+	-webkit-transition: transform .25s ease-in;
 }
 
 .fm-1:hover:before{
@@ -859,7 +866,7 @@ input:focus{
 	margin-left: 6.4px ;
 	transform: scale(0);
 	transform-origin: bottom right;
-	transition: transform .25s ease-in;
+	-webkit-transition: transform .25s ease-in;
 }
 
 .fm-2:hover:before{
@@ -883,7 +890,7 @@ input:focus{
 	margin-left: 6.4px ;
 	transform: scale(0);
 	transform-origin: bottom right;
-	transition: transform .25s ease-in;
+	-webkit-transition: transform .25s ease-in;
 }
 
 .fm-3:hover:before{
@@ -910,7 +917,7 @@ textarea:focus{
 	margin-left: 6.4px ;
 	transform-origin: bottom right;
 	transform: scale(0);
-	transition: transform .25s ease-in;
+	-webkit-transition: transform .25s ease-in;
 }
 
 .fm-4:hover:before{
@@ -942,8 +949,8 @@ textarea:focus{
 	background: inherit;
 	z-index: 10;
 	border: 2px solid  var(--lg-blue);
-	transition-duration: .35s;
-	transition-delay: .10s;
+	-webkit-transition-duration: .35s;
+	-webkit-transition-delay: .10s;
 }
 
 
@@ -990,7 +997,7 @@ p{
 
 }
 #about-dis:after{
-	width: 95% !important;
+	width: 90vw !important;
 }
 
 .contact{
@@ -1035,7 +1042,9 @@ p{
 {
 
 #about-dis{
-	font-size: 4rem;
+	font-size: 3.5rem;
+	padding-left: 2vw;
+	width: 90%;
 }
 
 #about-dis:after{
