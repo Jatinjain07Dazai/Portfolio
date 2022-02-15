@@ -24,6 +24,7 @@ body{
 	animation: 6s gradient infinite ease-in-out;
 	background-size: 400% 400%;
 	line-height: 1.4;
+	cursor: url('image/snowball.png');
 }
 
 @keyframes gradient{
@@ -61,14 +62,19 @@ body{
 	margin-left: 16%;
 	background: #fff;
 	border-radius: 20%;
+	animation: las .50s ease-in-out;
 }
+
 
 .toggle:hover{
 	transform: scale(1.2);
 	-webkit-transition: all .40s ease-in-out;
 }
 
-.line:hover{
+@keyframes las{
+	100%{
+		transform: rotate(180deg);
+	}
 }
 
 
@@ -79,12 +85,11 @@ body{
 
 header{
 	position: fixed;
-	min-height: 100vh;
+	height: 100vh;
 	width: 10vw ;
 	border: 2px solid #ff0;
 	border-radius: 1%;
 	background-color: var(--lgt-blue);
-	overflow: hidden;
 
 
 }
@@ -124,15 +129,16 @@ ul{
 
 
 .nav-link{
-	display: relative;
+	display: flex;
+	height: 10vh;
 	align-items: center;
+	justify-content: center;
 	font-size: 1.4rem;
 	border: 3px solid;
 	list-style: none;
 	border-color: #ddd;
 	font-weight: bolder;
 	letter-spacing: .125em;
-	padding: 10%;
 	color: var(--md-blue);
 	-webkit-transition: 60ms color ease-in;
 }
@@ -280,7 +286,7 @@ li:nth-child(4){
 	list-style: none;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-top: 40%;
+	margin-top: 10vh;
 	text-decoration: none;
 	align-items: center;
 	font-size: 1.1rem;
@@ -307,11 +313,24 @@ line-height: 4.3em;
 
 
 h1{
+	transform: scaleX(0.2);
 	font-size: var(--h1);
 	color: var(--lgt-blue);
 	letter-spacing: .5rem;
 	padding: 0px;
 	margin-bottom: -1%;
+	animation: 1s expand forwards ease-in;
+	transform-origin: left ;
+}
+
+@keyframes expand{
+	0%{
+		transform: scale(0.4)
+	}
+	100%{
+		transform: scaleX(1.0);
+
+	}
 }
 
 #drk{
@@ -347,6 +366,9 @@ h2{
 	margin-bottom: -1%;
 	letter-spacing: .2rem;
 	text-align: justify;
+	transform: scale(0);
+	transition: all 1s ease-in;
+	animation: 1s expand forwards ease-in;
 }
 
 #dk{
@@ -409,6 +431,9 @@ h3{
 	color: #FE5E41;
 	text-align: justify;
 	letter-spacing: .2rem;
+	transform: scaleX(0);
+	transition: all 1s ease-in;
+	animation: 1s expand forwards ease-in;
 }
 
 #lgt{
@@ -438,6 +463,7 @@ h3{
 
 
 .cont-butt{
+	animation: 1.2s move forwards ease-in;
 	width: 180px;
 	padding: 12px;
 	font-size:1.6rem;
@@ -451,6 +477,19 @@ h3{
 	-webkit-transition: all .5s ease-out;
 	
 }
+
+@keyframes move{
+	0%{
+		position: absolute;
+		left: 80vw;
+	}
+	100%{
+		position: relative;
+		left: 0;
+	}
+}
+
+
 #t:after{
 	position: absolute;
 	content: "";
@@ -1000,9 +1039,7 @@ p{
 	width: 90vw !important;
 }
 
-.contact{
-	
-}
+
 
 .contact{
 	margin: 0;
@@ -1105,10 +1142,38 @@ i
 
 .toggle{
 	display: block;
+	position: fixed;
+	left: 88%;	
 }
 
 header{
 	display: none;
+	width: 100vw;
+	z-index: 50;
+	height: 100vh;
+	overflow-y: scroll;
+}
+.navigate{
+	margin-top: 5%;
+	padding: 1px;
+}
+
+
+#upicon{
+	height: 30vh;
+	position: relative;
+}
+
+.snow-icon{
+	position: absolute;
+	height: 25vh;
+	left: 30%;
+}
+
+#text{
+	position: absolute;
+	bottom: 0;
+	left: 35%;
 }
 
 .home{
