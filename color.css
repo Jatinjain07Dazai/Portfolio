@@ -6,7 +6,7 @@
 	margin: 0;
 	padding: 0;
 }
-
+s
 :root{
 --drk-blue: #007ffe;
 --dr-blue:  #3099fe;
@@ -806,7 +806,6 @@ p:after{
 }
 #main-block{
 	overflow: hidden;
-	margin: 20px 20px;
 	background-color: #444;
 	min-height: fit-content;
 	background-image:url(image/map.png);
@@ -1005,6 +1004,16 @@ textarea:focus{
 
 }
 
+
+footer{
+	height: 20vh;
+	width: auto;
+	background: repeating-radial-gradient(var(--drk-blue), var(--md-blue));
+	color: #fff;
+}
+
+
+
 @media(max-width:600px)
 {
 :root{
@@ -1147,11 +1156,11 @@ i
 }
 
 header{
-	display: none;
 	width: 100vw;
 	z-index: 50;
 	height: 100vh;
 	overflow-y: scroll;
+	transform: scale(0);
 }
 .navigate{
 	margin-top: 5%;
